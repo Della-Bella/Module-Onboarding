@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="A" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -12,16 +12,83 @@
       <h1>Product Pick</h1>
     </header>
     <main>
+      <!-- there should be no action on the form -->
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- extra marks if fieldset is used :) -->
+        <fieldset>
+          <!-- and legend -->
+          <legend>Customer identification</legend>
+          <!-- labels must be associated with the correct inputs using for="" or with implicit association by wrapping the input with the label. However, attribute association is preferred-->
+          <label for="name">Your Name</label>
+          <!-- a pattern or a minlength is valid -->
+          <input
+            type="text"
+            name="name"
+            id="name"
+            pattern=".{2,}"
+            required
+            title="2 letters or more in your name, please"
+            required
+          />
+          <label for="email">Your Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            autocomplete="on"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Choose Colour</legend>
+          <!-- radio buttons solve the problem, as would select -->
+          <!-- wrong solutions: colorpicker without list constraint, text input, checkboxes -->
+          <input
+            type="radio"
+            id="red"
+            name="tShirtColor"
+            value="#FF0000"
+            required
+          />
+          <label for="red">Red</label>
+          <input type="radio" id="green" name="tShirtColor" value="#008000" />
+          <label for="green">Green</label>
+          <input type="radio" id="blue" name="tShirtColor" value="#0000FF" />
+          <label for="blue">Blue</label>
+        </fieldset>
+        <fieldset>
+          <legend for="size">Size</legend>
+          <label for="size">Choose Size</label>
+          <!-- select or radio buttons are the right choice here -->
+          <select name="size" id="size" required>
+            <option value="xs">Extra Small</option>
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">Extra Large</option>
+            <option value="xxl">Extra Extra Large</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="date">Choose delivery date</label>
+          <!-- a datepicker is the right choice here -->
+          <!-- it should have min and max but these dates will change! -->
+          <input
+            type="date"
+            name="date"
+            id="date"
+            min="2025-01-01"
+            max="2025-02-15"
+            required
+          />
+        </fieldset>
+        <!-- submit is not technically necessary but it is good practice -->
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By SALLY MCGRATH</h2>
     </footer>
   </body>
 </html>
