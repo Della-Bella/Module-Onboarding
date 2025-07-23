@@ -1,19 +1,19 @@
 name: Validate PR Metadata
 on:
   pull_request:
-  workflow_dispatch:
-  # TODO: Also on: Title edit, label change, promote from draft.
+    types:
+      - labeled
+      - unlabeled
+      - opened
+      - edited
+      - reopened
 
 jobs:
   validate_pr_metadata:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Get PR Metadata
-        run: gh pr view --json number,url > /tmp/pr-metadata.json
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Validate PR Metadata
-        run: curl --fai -o /tmp/validator https://reich.illicitonion.com/dump/20250723/pr-metadata-validator && chmod 0755 /tmp/validator && /tmp/validator /tmp/pr-metadata.json
+        run: curl --fai -o /tmp/validator https://reich.illicitonion.com/dump/20250723/pr-metadata-validator && chmod 0755 /tmp/validator && /tmp/validator ${{ github.event.pull_request.url }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
