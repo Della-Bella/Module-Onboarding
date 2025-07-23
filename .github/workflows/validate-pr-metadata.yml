@@ -13,7 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Download validator
+        run: curl --fail https://api.github.com/repos/CodeYourFuture/trainee-tracker/releases/latest | jq '.assets[] | select(.name == "pr-metadata-validator-musl").browser_download_url' | xargs curl --fail -L -o /tmp/pr-metadata-validator && chmod 0755 /tmp/pr-metadata-validator
       - name: Validate PR Metadata
-        run: curl --fail -o /tmp/validator https://reich.illicitonion.com/dump/20250723/pr-metadata-validator && chmod 0755 /tmp/validator && /tmp/validator ${{ github.event.pull_request.html_url }}
+        run: /tmp/pr-metadata-validator ${{ github.event.pull_request.html_url }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
