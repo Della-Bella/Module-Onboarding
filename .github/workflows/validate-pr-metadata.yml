@@ -14,6 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate PR Metadata
-        run: curl --fai -o /tmp/validator https://reich.illicitonion.com/dump/20250723/pr-metadata-validator && chmod 0755 /tmp/validator && /tmp/validator ${{ github.event.pull_request.url }}
+        run: curl --fail -o /tmp/validator https://reich.illicitonion.com/dump/20250723/pr-metadata-validator && chmod 0755 /tmp/validator && /tmp/validator ${{ github.event.pull_request.url }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
