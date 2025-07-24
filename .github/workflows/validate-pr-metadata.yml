@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: illicitonion/CYF-actions@main
+      - uses: illicitonion/CYF-actions/validate-pr-metadata@main
