@@ -8,8 +8,11 @@ For example,
 
 London | 25-ITP-May | Carol Owen | Sprint 1 | Alarm Clock
 
-Complete the task list below this message.
-If your PR is rejected, check the task list.
+Fill in the template below. Complete the self checklist. Remove any sections that don't apply.
+
+Add the label "Needs Review" and you will get review.
+
+Keep iterating on the PR until a volunteer marks it as "Complete".
 
 -->
 
@@ -17,11 +20,9 @@ If your PR is rejected, check the task list.
 
 Self checklist
 
-- [ ] I have committed my files one by one, on purpose, and for a reason
 - [ ] I have titled my PR with Region | Cohort | FirstName LastName | Sprint | Assignment Title
-- [ ] I have tested my changes
+- [ ] My changes meet the requirements of the task, and I have tested them
 - [ ] My changes follow the [style guide](https://curriculum.codeyourfuture.io/guides/reviewing/style-guide/)
-- [ ] My changes meet the [requirements](./README.md) of this task
 
 ## Changelist
 
