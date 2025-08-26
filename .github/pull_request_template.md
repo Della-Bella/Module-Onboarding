@@ -8,7 +8,7 @@ For example,
 
 London | 25-ITP-May | Carol Owen | Sprint 1 | Alarm Clock
 
-Fill in the template below. Complete the self checklist. Remove any sections that don't apply.
+Fill in the template below - remove any sections that don't apply. Complete the self checklist.
 
 Add the label "Needs Review" and you will get review.
 
@@ -21,7 +21,8 @@ Respond to volunteer reviews until the volunteer marks it as "Complete".
 Self checklist
 
 - [ ] I have titled my PR with Region | Cohort | FirstName LastName | Sprint | Assignment Title
-- [ ] My changes meet the requirements of the task, and I have tested them
+- [ ] My changes meet the requirements of the task
+- [ ] I have tested my changes
 - [ ] My changes follow the [style guide](https://curriculum.codeyourfuture.io/guides/reviewing/style-guide/)
 
 ## Changelist
