@@ -12,7 +12,7 @@ Fill in the template below. Complete the self checklist. Remove any sections tha
 
 Add the label "Needs Review" and you will get review.
 
-Keep iterating on the PR until a volunteer marks it as "Complete".
+Respond to volunteer reviews until the volunteer marks it as "Complete".
 
 -->
 
