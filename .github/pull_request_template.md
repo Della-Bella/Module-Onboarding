@@ -8,7 +8,9 @@ For example,
 
 London | 25-ITP-May | Carol Owen | Sprint 1 | Alarm Clock
 
-Fill in the template below - remove any sections that don't apply. Complete the self checklist.
+Fill in the template below - remove any sections that don't apply.
+
+Complete the self checklist - replace each empty box in the checklist [ ] with a [x].
 
 Add the label "Needs Review" and you will get review.
 
