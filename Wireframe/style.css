@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -30,18 +36,6 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 
-
-
-main {
-  display: flex;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-
-  >*:first-child {
-    grid-column: span 2;
-  }
-}
-
 article {
   border: var(--line);
   padding-bottom: var(--space);
@@ -58,8 +52,12 @@ article {
   }
 }
 
-.grid-container {
+.footer-container {
+  background-color: rgb(30, 30, 30);
+  color: aliceblue;
   position: fixed;
+  align-items: center;
+  
   bottom: 0;
   text-align: center;
   display: grid;
