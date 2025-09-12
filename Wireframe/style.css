@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-  background-color: #131111;
+  background-color: #060606;
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
@@ -35,11 +35,12 @@ nav a:hover {
 
 header h1 {
   height: 500px;
-  position: relative;
-  font-size: 3rem;
+  position: center;
+  font-size: 11rem;
   line-height: 1.2;
   margin: 0;
-  padding: 400px;
+  padding: 300px;
+  margin-bottom: 100px;
   flex-grow: 1;
   z-index: 1;
   color: aliceblue;
@@ -48,19 +49,24 @@ header h1 {
 
 section {
   min-height: 100vh;
-  padding: 40px 100px;
-  text-align: center;
+  padding: 40px ;
+  text-align: right;
   width: 100%;
 }
 
 h1 {
-  position: relative;
-  color: black;
-  font-size: 40px;
+  color: white;
+    font-size: 72px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
 }
 
 .subtext {
   font-size: 20px;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
 
 }
 
@@ -78,7 +84,7 @@ p {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #fffffff1;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
@@ -105,16 +111,58 @@ a {
   text-decoration: none;
   color: rgb(45, 51, 129);
 }
+.img-card{
+  border-radius: 10px;
+  padding-top: 20px;
+}
 
 footer {
   display: flex;
-  background-color: rgb(35, 35, 35);
+  justify-content: center;
+  padding: 80px 50px;
+  background-color: #060606;
   color: aliceblue;
-  align-items: center;
-
-  gap: 2rem;
-  margin: 0 auto;
+}
+.footer-content {
+  max-width: 1200px;
   width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 80px;
+}
 
+h2 {
+  font-size: 4em;
+  font-weight: normal;
+  margin-bottom: 40px;
+  grid-area: title;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.address {
+  grid-area: address;
+}
+
+.contact p,
+.addressp {
+  margin: 5px 0;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.social {
+  grid-area: social;
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
 
 }
+
+
