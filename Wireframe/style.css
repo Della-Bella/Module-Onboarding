@@ -8,6 +8,7 @@ body {
   color: #000000;
   font: Montserrat, sans-serif;
   background-color: #000000;
+  padding-bottom: 300px;
 }
 
 nav {
@@ -20,58 +21,50 @@ nav {
   box-shadow: 0 2px 5px rgb(0, 0, 0);
 }
 
-nav a {
+ a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
-
 }
 
-nav a:hover {
-  color: #223076;
-
+ a:hover {
+  color: #60c84b;
 }
 
-header h1 {
-  height: 500px;
-  position: center;
-  font-size: 11rem;
-  line-height: 1.2;
-  margin: 0;
-  padding: 300px;
+header {
+  height: 800px;
   margin-bottom: 100px;
-  flex-grow: 1;
-  z-index: 1;
   color: aliceblue;
-  background: url('img/main.jpg') no-repeat center center/cover;
-}
-
-section {
-  min-height: 100vh;
-  padding: 40px ;
-  text-align: right;
-  width: 100%;
+  background: url("img/main.jpg") no-repeat center/cover;
 }
 
 h1 {
+  padding: 60px 0 0 150px;
+  margin: 20px 0 0 0;
+  text-align: start;
+  font-size: 11rem;
   color: white;
-    font-size: 72px;
-    text-align: center;
-    display: inline-block;
-    position: relative;
 }
 
 .subtext {
   font-size: 20px;
   color: #fff;
-  text-align: center;
+  text-align: start;
+  margin-left: 180px;
   justify-content: center;
+  padding-top: 0;
+}
 
+section {
+  min-height: 100vh;
+  padding: 40px;
+  text-align: right;
+  width: 100%;
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .card-container {
@@ -81,12 +74,13 @@ p {
   padding: 3rem 2rem;
   max-width: 1200px;
   margin: 2rem auto;
+  padding: 50px;
 }
 
 .card {
   background-color: #fffffff1;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(250, 244, 244, 0.1);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -107,54 +101,44 @@ p {
   flex-grow: 1;
 }
 
-a {
+/* a {
   text-decoration: none;
-  color: rgb(45, 51, 129);
-}
-.img-card{
+  color: rgb(122, 123, 136);
+}  */
+
+.img-card {
   border-radius: 10px;
   padding-top: 20px;
 }
 
 footer {
+  position: fixed;
   display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  gap: 500px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 45px;   
+    line-height: 1.4;
   justify-content: center;
-  padding: 80px 50px;
+  padding: 20px 30px;
   background-color: #060606;
   color: aliceblue;
 }
+
 .footer-content {
   max-width: 1200px;
   width: 100%;
-  grid-template-columns: 1fr 1fr;
   gap: 40px 80px;
-}
-
-h2 {
-  font-size: 4em;
-  font-weight: normal;
-  margin-bottom: 40px;
-  grid-area: title;
-}
-
-.contact {
-  grid-area: contact;
-}
-
-.address {
-  grid-area: address;
-}
-
-.contact p,
-.addressp {
-  margin: 5px 0;
-  font-size: 1.2em;
   line-height: 1.6;
 }
+  footer a {
+   color: #60c84b;
+ } 
 
 .social {
   grid-area: social;
-  display: flex;
   gap: 15px;
   margin-top: 40px;
 }
@@ -162,7 +146,6 @@ h2 {
 .social-icon img {
   width: 30px;
   height: 30px;
-
+margin-left: 20px;
+ gap: 30px;
 }
-
-
