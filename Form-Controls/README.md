@@ -40,7 +40,7 @@ Let's write out our testable criteria. Check each one off as you complete it.
 - [ ] My Lighthouse Accessibility score is 100.
 - [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
 - [ ] I require a valid email.
-- [ ] I require one colour from a defined set of 3 colours.
+- [ ] I requiolourre one colour from a defined set of 3 cs.
 - [ ] I require one size from a defined set of 6 sizes.
 
 ## Resources
