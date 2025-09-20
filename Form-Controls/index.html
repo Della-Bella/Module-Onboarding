@@ -1,27 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product </h1>
+  </header>
+  <main>
+    <!-- Write a valid form / Test with Devtools/Refactor using Devtools -->
+
+    <form>
+      <!-- customer's name/ require-->
+      <fieldset>
+        <legend><h2> Pick Your T-shirt</h2></legend>
+        <p>
+          Required fields are followed by
+          <strong><span aria-label="required">*</span></strong>
+        </p>
+
+        <p>
+          <label for="name"><strong>Name *</strong></label>
+        </p>
+        <input type="text" id="name" name="user_name" required minlength="2" />
+
+        <!-- customer's e-amil/ require-->
+
+        <p><label for="e-mail"><span><strong>E-mail *</strong></span></label>
+        </p>
+        <input type="email" id="e-mail" name="user_email" required />
+
+        <!-- 3 options colour/ pick only 1/ require -->
+
+        <label for="colour-YELLOW">
+          <p><strong>Colour:</strong></p>
+          <input type="radio" id="colour-YELLOW" value="YELLOW" name="colour" required />
+          <span>Yellow</span>
+        </label>
+
+        <label for="colour-RED">
+          <input type="radio" id="colour-RED" value="RED" name="colour" required />
+          <span>Red</span>
+        </label>
+
+        <label for="colour-BLUE">
+          <input type="radio" id="colour-BLUE" value="BLUE" name="colour" required/>
+          <span>Blue</span>
+        </label>
+
+        <!--6 options: XS, S, M, L, XL, XXL/ pick only 1 / require-->
+        <p><strong>Size:</strong></p><ul>
+          
+          <li>
+            <label for="colour-XS">
+              <input type="radio" id="colour-XS" name="size" value="colour-XS" required ><span> XS </span>
+            </label>
+          </li>
+
+          <li>
+            <label for="colour-S">
+              <input type="radio" id="size-S" name="size" value="colour-S" required ><span> S</span>
+            </label>
+          </li>
+
+          <li>
+            <label for="colour-M">
+              <input type="radio" id="size-M" name="size" value="colour-M" required ><span> M</span>
+            </label>
+          </li>
+
+          <li>
+            <label for="colour-L">
+              <input type="radio" id="size-L" name="size" value="colour-L" required ><span> L</span>
+            </label>
+          </li>
+
+          <li>
+            <label for="colour-XL">
+              <input type="radio" id="size-XL" name="size" value="colour-XL" required ><span> XL</span>
+            </label>
+          </li>
+
+          <li>
+            <label for="colour-XXL">
+              <input type="radio" id="size-XXL" name="size" value="colour-XXL" required ><span> XXL</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h3>By Gisline Della Bella</h3>
+  </footer>
+</body>
+
 </html>
